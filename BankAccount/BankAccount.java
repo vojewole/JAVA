@@ -40,7 +40,7 @@ public class BankAccount{
 		}
 	}
 	
-	public void displayTotalMoney(){
+	public static void displayTotalMoney(){
 		System.out.println(String.format("Accounts total balaance is %s.", moneyStored));
 	}
 }
