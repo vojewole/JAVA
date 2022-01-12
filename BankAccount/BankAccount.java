@@ -26,14 +26,14 @@ public class BankAccount{
 		}
 	}
 	
-	public void withdrawMoneyToAccount(boolean isChecking, double deposit){
-		if(isChecking && deposit < checkingBalance){
-			checkingBalance = checkingBalance - deposit;
-			moneyStored = moneyStored - deposit;
+	public void withdrawMoneyToAccount(boolean isChecking, double withdraw){
+		if(isChecking && withdraw < checkingBalance){
+			checkingBalance = checkingBalance - withdraw;
+			moneyStored = moneyStored - withdraw;
 		}
-		else if(!isChecking && deposit < savingsBalance){
-			savingsBalance = savingsBalance - deposit;
-			moneyStored = moneyStored - deposit;
+		else if(!isChecking && withdraw < savingsBalance){
+			savingsBalance = savingsBalance - withdraw;
+			moneyStored = moneyStored - withdraw;
 		}
 		else{
 			System.out.println("Cannot withdraw money from account insufficient funds.");
