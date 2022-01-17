@@ -11,6 +11,7 @@ public class Physician extends User implements HIPAACompliantUser {
 	public Physician(Integer id) {
 		super(id);
 		this.id = id;
+		this.patientNotes = new ArrayList();
 		// TODO Auto-generated constructor stub
 	}
 
